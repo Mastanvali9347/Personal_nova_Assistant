@@ -1,13 +1,3 @@
-# nova_assistant_fixed.py
-"""
-Nova Assistant - fixed classroom-ready version
-- GUI with pulsing circle (Tkinter)
-- Listens continuously (no mic button)
-- Responds only when your name is heard
-- Commands: YouTube, Google, File Manager, WhatsApp, Facebook, Instagram
-- Uses urllib.parse.quote for safe URLs
-"""
-
 import os
 import time
 import threading
@@ -21,10 +11,9 @@ import pyttsx3
 import pywhatkit
 import tkinter as tk
 
-# -------- CONFIG ----------
-MY_NAME = "Mastan"       # change to the name you want assistant to listen for
+MY_NAME = "Mastan"
 LISTEN_SECONDS = 5       # seconds per listen attempt
-# --------------------------
+
 
 # TTS engine
 tts_engine = pyttsx3.init()
@@ -79,10 +68,10 @@ class NovaGUI:
         p = (math.sin(self.phase) + 1)/2
         r = 50 + p * 90
         if self.status == "idle":
-            outline = "#7b7bff"
+            outline = "#2cd6c8"
             fill = "#11112a"
         elif self.status == "listening":
-            outline = "#ffd166"
+            outline = "#fce6b5"
             fill = "#2a240d"
         elif self.status == "ready":
             outline = "#3ddc84"
@@ -174,24 +163,22 @@ def execute_command(text):
     if "open whatsapp" in t:
         webbrowser.open("https://web.whatsapp.com")
         return "Opening WhatsApp Web"
-
+    # facebook
     if "open facebook" in t:
         webbrowser.open("https://facebook.com")
         return "Opening Facebook"
-
+    # instagram
     if "open instagram" in t or "open insta" in t:
         webbrowser.open("https://instagram.com")
         return "Opening Instagram"
-
+    # twitter
     if "open twitter" in t:
         webbrowser.open("https://twitter.com")
         return "Opening Twitter"
-    
+    # linkedin
     if "open linkedin" in t:
         webbrowser.open("https://linkedin.com")
         return "Opening LinkedIn"
-
-    # fallback
     webbrowser.open("https://www.google.com/search?q=" + urllib.parse.quote(t))
     return f"Searched web for: {t}"
 
