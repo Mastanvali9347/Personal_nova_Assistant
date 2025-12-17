@@ -1,0 +1,28 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+venv/
+env/
+.venv/
+
+# --- PyInstaller Build Folders (Don't upload these!) ---
+build/
+dist/
+*.spec
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- Project Specific Generated Files ---
+*.png
+nova_notes.txt
+*.log
+
+# --- System Files ---
+Thumbs.db
+Desktop.ini
+.DS_Store
