@@ -13,7 +13,7 @@ import random
 import subprocess
 import requests
 
-# --- External Libraries ---
+
 import speech_recognition as sr
 import pyttsx3
 import pywhatkit
