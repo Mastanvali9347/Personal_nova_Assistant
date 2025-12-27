@@ -106,11 +106,75 @@ def system_cleanup():
 
 # --- MAPPINGS ---
 SITES = {
-    "google": "https://google.com", "youtube": "https://youtube.com",
-    "github": "https://github.com", "linkedin": "https://linkedin.com",
-    "chatgpt": "https://chat.openai.com", "netflix": "https://netflix.com",
-    "whatsapp": "https://web.whatsapp.com", "instagram": "https://instagram.com"
+    # Search & AI
+    "google": "https://google.com",
+    "chatgpt": "https://chat.openai.com",
+    "bing": "https://bing.com",
+    "perplexity": "https://www.perplexity.ai",
+
+    # Video & Music
+    "youtube": "https://youtube.com",
+    "youtube music": "https://music.youtube.com",
+    "spotify": "https://open.spotify.com",
+    "soundcloud": "https://soundcloud.com",
+    "wynk": "https://wynk.in",
+    "jiosaavn": "https://www.jiosaavn.com",
+
+    # Social Media
+    "instagram": "https://instagram.com",
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com",
+    "x": "https://x.com",
+    "threads": "https://www.threads.net",
+    "snapchat": "https://snapchat.com",
+    "whatsapp": "https://web.whatsapp.com",
+    "telegram": "https://web.telegram.org",
+
+    # Developer / Coding
+    "github": "https://github.com/Mastanvali9347",
+    "linkedin": "https://www.linkedin.com/in/patan-mastan/",
+    "stackoverflow": "https://stackoverflow.com",
+    "geeksforgeeks": "https://www.geeksforgeeks.org",
+    "leetcode": "https://leetcode.com",
+    "hackerrank": "https://www.hackerrank.com",
+    "codeforces": "https://codeforces.com",
+    "w3schools": "https://www.w3schools.com",
+    "npm": "https://www.npmjs.com",
+    "pypi": "https://pypi.org",
+
+    # Learning Platforms
+    "coursera": "https://coursera.org",
+    "udemy": "https://udemy.com",
+    "edx": "https://edx.org",
+    "khan academy": "https://www.khanacademy.org",
+    "freecodecamp": "https://www.freecodecamp.org",
+
+    # Email & Cloud
+    "gmail": "https://mail.google.com",
+    "google drive": "https://drive.google.com",
+    "google docs": "https://docs.google.com",
+    "google sheets": "https://sheets.google.com",
+    "google meet": "https://meet.google.com",
+
+    # Shopping
+    "amazon": "https://amazon.in",
+    "flipkart": "https://flipkart.com",
+    "myntra": "https://myntra.com",
+    "ajio": "https://ajio.com",
+
+    # Payments / Finance
+    "paytm": "https://paytm.com",
+    "phonepe": "https://www.phonepe.com",
+    "google pay": "https://pay.google.com",
+
+    # Utilities
+    "speed test": "https://fast.com",
+    "maps": "https://maps.google.com",
+    "translate": "https://translate.google.com",
+    "calendar": "https://calendar.google.com",
+    "weather site": "https://weather.com"
 }
+
 
 # --- COMMAND PROCESSOR ---
 def process_command(cmd, gui):
